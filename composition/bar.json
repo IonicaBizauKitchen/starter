@@ -1,0 +1,43 @@
+{
+  "client": {
+    "load": [
+      "foo1"
+    ],
+    "config": {},
+    "html": [],
+    "css": [],
+    "extFlow": [
+      {
+        "in": "click",
+        "selector": "#foo",
+        "out": [
+          {
+            "call": "set"
+          },
+          {
+            "call": "get"
+          },
+          {
+            "call": "render",
+            "to": "root"
+          }
+        ]
+      }
+    ],
+    "flow": [
+      {
+        "in": "foo",
+        "out": [
+          {
+            "emit": "bar"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "bar",
+  "module": "engine-editor",
+  "roles": {
+    "*": true
+  }
+}

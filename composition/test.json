@@ -1,0 +1,7 @@
+{
+  "name": "test",
+  "module": "engine-form",
+  "roles": {
+    "*": true
+  }
+}
