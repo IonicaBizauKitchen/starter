@@ -1,7 +1,17 @@
 {
+  "client": {
+    "load": [],
+    "config": {
+      "f": "c"
+    },
+    "html": [],
+    "css": [],
+    "extFlow": [],
+    "flow": []
+  },
   "name": "test",
   "module": "engine-form",
   "roles": {
-    "*": true
+    "*": false
   }
 }
