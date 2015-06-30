@@ -12,11 +12,9 @@
       "composition": {
         "client": {
             "module": [
-                "js/foo.js"
+                "/js/foo.js"
             ]
         }
       }
   }
-
-
 }
