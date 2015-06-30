@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "view": "adioo/view.git",
-    "engine-sidebar": "1.1.0",
-    "engine-keypress": "1.0.1"
+    "view": "adioo/view.git"
   },
   "name": "starter",
   "version": "0.1.0",

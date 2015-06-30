@@ -1,7 +1,0 @@
-{
-  "name": "bar42",
-  "module": "engine-keypress",
-  "roles": {
-    "*": true
-  }
-}
