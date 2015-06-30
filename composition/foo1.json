@@ -4,52 +4,8 @@
     "config": {},
     "html": [],
     "css": [],
-    "extFlow": [
-      {
-        "in": "click",
-        "selector": "#container",
-        "out": [
-          {
-            "call": "state",
-            "to": "root"
-          },
-          {
-            "load": [
-              "foo1"
-            ]
-          }
-        ]
-      }
-    ],
-    "flow": [
-      {
-        "in": "foo",
-        "out": [
-          {
-            "load": [
-              "bar"
-            ]
-          },
-          {
-            "load": [
-              "test"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "_service": {
-    "client": {
-      "methods": {},
-      "emits": {},
-      "listens": {}
-    },
-    "server": {
-      "methods": {},
-      "emits": {},
-      "listens": {}
-    }
+    "extFlow": [],
+    "flow": []
   },
   "name": "foo1",
   "module": "engine-jq",

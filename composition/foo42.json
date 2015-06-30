@@ -1,0 +1,10 @@
+{
+  "client": {
+    "load": []
+  },
+  "name": "foo42",
+  "module": "engine-sidebar",
+  "roles": {
+    "*": true
+  }
+}
