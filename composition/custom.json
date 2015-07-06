@@ -8,13 +8,5 @@
   "roles": {
     "*": true
   },
-  "module": {
-      "composition": {
-        "client": {
-            "module": [
-                "/js/foo.js"
-            ]
-        }
-      }
-  }
+  "module": "test-workers"
 }
