@@ -1,0 +1,11 @@
+{
+  "client": {
+    "config": {
+      "title": "User profile"
+    }
+  },
+  "roles": {
+    "*": true
+  },
+  "module": "view"
+}

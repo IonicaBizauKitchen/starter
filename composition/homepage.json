@@ -1,0 +1,28 @@
+{
+  "client": {
+    "load": ["custom"],
+    "config": {
+      "title": "Starter Project",
+      "templates": {
+        "layout": {
+          "to": "body",
+          "html": "/root.html",
+          "render": true
+        }
+      },
+      "detaultTemplate": "layout"
+    },
+    "markup": [
+      "/root.html"
+    ],
+    "styles": [
+      "/bootstrap/css/bootstrap.min.css",
+      "/bootstrap/css/bootstrap-theme.min.css",
+      "/style.css"
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "module": "view"
+}
