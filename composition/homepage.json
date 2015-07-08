@@ -6,23 +6,32 @@
       "templates": {
         "layout": {
           "to": "body",
-          "html": "/root.html",
-          "render": true
+          "html": "/root.html"
         }
       },
-      "detaultTemplate": "layout"
+      "detaultTemplate": "layout",
+      "flow": [
+        {
+            "on": "click",
+            "call": "route",
+            "to": "root",
+            "selector": ".users",
+            "data": ["transform", {
+                "data": {
+                    "url": "/users",
+                    "clear": true
+                }
+            }]
+        }
+      ]
     },
     "markup": [
       "/root.html"
-    ],
-    "styles": [
-      "/bootstrap/css/bootstrap.min.css",
-      "/bootstrap/css/bootstrap-theme.min.css",
-      "/style.css"
     ]
   },
   "roles": {
     "*": true
   },
+  "name": "homepage",
   "module": "view"
 }

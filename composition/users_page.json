@@ -1,11 +1,48 @@
 {
   "client": {
     "config": {
-      "title": "Users"
-    }
+      "title": "Users",
+      "templates": {
+        "layout": {
+          "to": "body",
+          "html": "/users.html"
+        }
+      },
+      "detaultTemplate": "layout",
+      "flow": [
+        {
+            "on": "click",
+            "selector": "ul > li",
+            "call": "route",
+            "data": ["transform", {
+                "data": {
+                    "url": "/users/{event.target.innerHTML}",
+                    "clear": true
+                }
+            }],
+            "to": "root"
+        },
+        {
+            "on": "click",
+            "selector": ".backk",
+            "call": "route",
+            "data": ["transform", {
+                "data": {
+                    "url": "/",
+                    "clear": true
+                }
+            }],
+            "to": "root"
+        }
+      ]
+    },
+    "markup": [
+      "/users.html"
+    ]
   },
   "roles": {
     "*": true
   },
+  "name": "users_page",
   "module": "view"
 }

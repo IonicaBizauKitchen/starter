@@ -9,8 +9,37 @@
     },
     "flow": [{
         "on": "homepage",
-        "to": "homepage"
-    }]
+        "to": "homepage",
+        "call": "render",
+        "data": ["transform", {
+            "data": {
+                "clear": true
+            }
+        }]
+    }, {
+        "on": "users_page",
+        "to": "users_page",
+        "call": "render",
+        "data": ["transform", {
+            "data": {
+                "clear": true
+            }
+        }]
+    }, {
+        "on": "user_profile",
+        "to": "user_profile",
+        "call": "render",
+        "data": ["transform", {
+            "data": {
+                "clear": true
+            }
+        }]
+    }],
+    "styles": [
+      "/bootstrap/css/bootstrap.min.css",
+      "/bootstrap/css/bootstrap-theme.min.css",
+      "/style.css"
+    ]
   },
   "roles": {
     "*": true

@@ -1,11 +1,49 @@
 {
-  "client": {
-    "config": {
-      "title": "User profile"
-    }
-  },
-  "roles": {
-    "*": true
-  },
-  "module": "view"
+    "client": {
+        "config": {
+            "title": "User profile",
+            "templates": {
+                "layout": {
+                    "to": "body",
+                    "html": "/user_profile.html",
+                    "render": true
+                }
+            },
+            "detaultTemplate": "layout",
+            "flow": [{
+                "on": "click",
+                "call": "route",
+                "selector": ".back",
+                "to": "root",
+                "data": ["transform", {
+                    "data": {
+                        "url": "/users"
+                    }
+                }]
+            }]
+        },
+        "flow": [
+            {
+                "on": "renderedDOM",
+                "call": "updateProfileUsername",
+                "to": "custom",
+                "data": [
+                    "transform",
+                    {
+                        "set": {
+                            "username": "params.user"
+                        }
+                    }
+                ]
+            }
+        ],
+        "markup": [
+          "/user_profile.html"
+        ]
+    },
+    "roles": {
+        "*": true
+    },
+    "name": "user_profile",
+    "module": "view"
 }
